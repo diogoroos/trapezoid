@@ -2,7 +2,7 @@
 
 [![pub package](https://img.shields.io/pub/v/trapezoid.svg?style=for-the-badge&color=blue)](https://pub.dartlang.org/packages/trapezoid)
 
-A customizable trapeze with texts, icons and divided into touchable parts. Works on Android, iOS, Web, Windows, Linux and Mac.<br/>
+A customizable trapeze with texts, icons and divided into touchable parts. It's better than image because every part of the trapezoid is clickable. Works on Android, iOS, Web, Windows, Linux and Mac.<br/>
 Cloned and improved from the trapezoid package.
 
 ## Installation
