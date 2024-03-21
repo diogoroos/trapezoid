@@ -1,6 +1,6 @@
 name: trapezoid
-description: A customizable trapezoid (or trapezoid) for Android, iOS, WEB, Linux, Mac and Windows.
-version: 2.0.0
+description: A customizable trapezoid/trapezium for Android, iOS, WEB, Linux, Mac and Windows.
+version: 1.0.0
 homepage: https://github.com/diogoroos/trapezoid
 
 platforms:

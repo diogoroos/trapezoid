@@ -192,6 +192,13 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.6.1"
+  trapezoid:
+    dependency: "direct main"
+    description:
+      path: ".."
+      relative: true
+    source: path
+    version: "2.0.0"
   vector_math:
     dependency: transitive
     description:
@@ -210,3 +217,4 @@ packages:
     version: "13.0.0"
 sdks:
   dart: ">=3.3.0 <4.0.0"
+  flutter: ">=3.12.0"

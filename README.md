@@ -1,13 +1,13 @@
 # trapezoid
 
-[![pub package](https://img.shields.io/pub/v/fl_numeric_keyboard.svg?style=for-the-badge&color=blue)](https://pub.dartlang.org/packages/trapezoid)
+[![pub package](https://img.shields.io/pub/v/trapezoid.svg?style=for-the-badge&color=blue)](https://pub.dartlang.org/packages/trapezoid)
 
-Easily display a numeric keypad like those found on P.O.S (P.D.V in Brazil) equipment. Works on Android, iOS, Web, Windows, Linux and Mac.<br/>
-Cloned and improved from the numeric_keyboard package.
+A customizable trapeze with texts, icons and divided into touchable parts. Works on Android, iOS, Web, Windows, Linux and Mac.<br/>
+Cloned and improved from the trapezoid package.
 
 ## Installation
 
-Add `trapezoid: ^2.0.0` in your `pubspec.yaml` dependencies. And import it:
+Add `trapezoid: ^1.0.0` in your `pubspec.yaml` dependencies. And import it:
 
 ```dart
 import 'package:trapezoid/trapezoid.dart';
@@ -15,46 +15,58 @@ import 'package:trapezoid/trapezoid.dart';
 
 ## How to use
 
-Simply create a `FlutterKeyboard` widget and pass the required params:
+Simply create a `Trapezoid` widget and pass the required params:
 
 ```dart
-FlutterKeyboard(
-  onKeyboardTap: _onKeyboardTap
+Trapezoid(
+  afterLastTrapeze: Padding(
+    padding: const EdgeInsets.only(left: 3),
+    child: Container(
+      width: 90,
+      height: 20,
+      decoration: const BoxDecoration(color: Color.fromRGBO(156, 17, 6, 1)),
+    ),
+  ),
 )
-
-_onKeyboardTap(String value) {
-  setState(() {
-    text = text + value;
-  });
-}
 ```
 
 ## Params
 
 ```dart
-FlutterKeyboard(
-  onKeyboardTap: _onKeyboardTap,
-  characters: const ['1', '2', '3', 'A', 'B', 'C', '!', '@', '#'],
-  footerMiddleCharacter: '💡',
-  itemsPerRow: 3,
-  getAllSpace: true,
-  externalPaddingButtons: const EdgeInsets.all(12),
-  buttonsDecoration: BoxDecoration(
-    borderRadius: BorderRadius.circular(12),
-    color: Colors.blue,
+Trapezoid(
+  firstButtonAction: () => 0,
+  afterLastTrapeze: Padding(
+    padding: const EdgeInsets.only(left: 3),
+    child: Container(
+      width: 90,
+      height: 20,
+      decoration: const BoxDecoration(color: Color.fromRGBO(156, 17, 6, 1)),
+    ),
   ),
-  footerRightAction: () {
-    setState(() {
-      textCtrl.text = textCtrl.text.substring(0, textCtrl.text.length - 1);
-    });
-  },
-  footerRightChild: Container(
-    alignment: Alignment.center,
-    width: 50,
-    height: 50,
-    child: const Icon(Icons.backspace),
+  firstDecoration: const BoxDecoration(color: Color.fromRGBO(248, 151, 0, 1)),
+  secondDecoration: const BoxDecoration(color: Color.fromRGBO(246, 103, 16, 1)),
+  thirdDecoration: const BoxDecoration(color: Color.fromRGBO(237, 36, 23, 1)),
+  fourDecoration: const BoxDecoration(color: Color.fromRGBO(156, 17, 6, 1)),
+  childOneFirstTrapeze: const Text('1First', style: TextStyle(fontWeight: FontWeight.bold)),
+  childOneSecondTrapeze: const Text('1Second'),
+  childOneThirdTrapeze: const Text('1Third'),
+  childTwoFirstTrapeze: const Text('2First', style: TextStyle(fontWeight: FontWeight.bold)),
+  childTwoSecondTrapeze: Text('2Second', style: TextStyle(color: Colors.purple[900])),
+  childTwoThirdTrapeze: const Text('2Third'),
+  childThreeFirstTrapeze: const Text('3First', style: TextStyle(fontWeight: FontWeight.bold)),
+  childThreeSecondTrapeze: const Text('3Second'),
+  childThreeThirdTrapeze: const Text('3Third'),
+  childFourFirstTrapeze: const Text('4First', style: TextStyle(fontWeight: FontWeight.bold)),
+  childFourSecondTrapeze: const Text('4Second', style: TextStyle(color: Colors.amber)),
+  childFourThirdTrapeze: const Text('4Third'),
+  firstIcon: const Positioned(
+    top: 7,
+    left: 20,
+    child: Icon(Icons.add_shopping_cart_sharp, color: Colors.deepPurpleAccent),
   ),
-),
+  thirdIcon: const Positioned(top: 7, right: 20, child: Icon(Icons.add_chart, color: Colors.white70)),
+  secondIcon:
+      const Positioned(top: 14, right: 20, child: Icon(Icons.stacked_line_chart_outlined, color: Colors.white)),
 )
 ```
 
