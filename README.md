@@ -74,17 +74,13 @@ For a more detail example please take a look at the `example` folder.
 
 ## Example
 
-Flutter keyboard:
+Trapezoid:
 
 <table>
   <tr>
-    <td> <img src="https://github.com/diogoroos/trapezoid/assets/78812662/6a94f092-b627-42c4-8613-9d0d2f7145d9"></td>
-    <td><img src="https://github.com/diogoroos/trapezoid/assets/78812662/5796099e-3c51-41e7-9766-fd1b6bb6d0ca"></td>
+    <td> <img src="https://github.com/diogoroos/trapezoid/assets/78812662/9476ae67-fb4a-4acd-ae28-3b41c17f6271"></td>
+    <td><img src="https://github.com/diogoroos/trapezoid/assets/78812662/70018692-0031-4e2a-96a7-96710c0c7575"></td>
    </tr> 
-   <tr>
-      <td><img src="https://github.com/diogoroos/trapezoid/assets/78812662/05a6162a-a763-4b0a-b068-a4125f6fe87a"></td>
-      <td><img src="https://github.com/diogoroos/trapezoid/assets/78812662/2f1551ae-b175-4044-a81d-d5e60cbaf58e"></td>
-  </tr>
 </table>
 
 ## -
