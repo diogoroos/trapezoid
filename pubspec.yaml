@@ -1,0 +1,26 @@
+name: trapezoid
+description: A customizable trapezoid (or trapezoid) for Android, iOS, WEB, Linux, Mac and Windows.
+version: 2.0.0
+homepage: https://github.com/diogoroos/trapezoid
+
+platforms:
+  android:
+  ios:
+  linux:
+  macos:
+  web:
+  windows:
+
+environment:
+  sdk: '>=2.19.6 <4.0.0'
+  flutter: ^3.12.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  flutter_lints: ^3.0.0
