@@ -3,11 +3,10 @@
 [![pub package](https://img.shields.io/pub/v/trapezoid.svg?style=for-the-badge&color=blue)](https://pub.dartlang.org/packages/trapezoid)
 
 A customizable trapeze with texts, icons and divided into touchable parts. It's better than image because every part of the trapezoid is clickable. Works on Android, iOS, Web, Windows, Linux and Mac.<br/>
-Cloned and improved from the trapezoid package.
 
 ## Installation
 
-Add `trapezoid: ^1.0.0` in your `pubspec.yaml` dependencies. And import it:
+Add `trapezoid: ^1.0.1` in your `pubspec.yaml` dependencies. And import it:
 
 ```dart
 import 'package:trapezoid/trapezoid.dart';
@@ -16,21 +15,6 @@ import 'package:trapezoid/trapezoid.dart';
 ## How to use
 
 Simply create a `Trapezoid` widget and pass the required params:
-
-```dart
-Trapezoid(
-  afterLastTrapeze: Padding(
-    padding: const EdgeInsets.only(left: 3),
-    child: Container(
-      width: 90,
-      height: 20,
-      decoration: const BoxDecoration(color: Color.fromRGBO(156, 17, 6, 1)),
-    ),
-  ),
-)
-```
-
-## Params
 
 ```dart
 Trapezoid(
